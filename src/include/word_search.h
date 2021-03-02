@@ -9,7 +9,7 @@
 
 
 typedef struct __WORD_SEARCH WordSearch;
-typedef struct __WORD_SEARCH_MOVE WordSearchMove;
+typedef struct __WORD_SEARCH_WORD WordSearchWord;
 
 
 
@@ -22,7 +22,8 @@ struct __WORD_SEARCH{
 
 
 
-struct __WORD_SEARCH_MOVE{
+struct __WORD_SEARCH_WORD{
+	const char* w;
 	uint8_t sx;
 	uint8_t sy;
 	uint8_t ex;
@@ -39,7 +40,7 @@ void print_word_search(WordSearch* ws);
 
 
 
-WordSearchMove find_word_search(WordSearch* ws,const char* w);
+uint8_t find_word_search(WordSearch* ws,const char* w,WordSearchWord* o);
 
 
 
