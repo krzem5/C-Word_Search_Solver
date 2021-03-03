@@ -17,6 +17,7 @@ struct __WORD_SEARCH{
 	uint8_t w;
 	uint8_t h;
 	uint16_t _fl[LETTER_COUNT];
+	char* _w;
 	char dt[];
 };
 
