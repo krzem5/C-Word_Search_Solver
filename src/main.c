@@ -15,7 +15,7 @@ int main(int argc,const char** argv){
 	print_word_search(ws);
 	WordSearchWord w;
 	QueryPerformanceCounter(&s);
-	uint8_t o=find_word_search(ws,"ei",&w);
+	uint8_t o=find_word_search(ws,"aei",&w);
 	QueryPerformanceCounter(&e);
 	if (o){
 		printf("Word: %hhu, %hhu -> %hhu, %hhu\n",w.sx+1,w.sy+1,w.ex+1,w.ey+1);
